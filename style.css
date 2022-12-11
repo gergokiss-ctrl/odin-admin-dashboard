@@ -7,14 +7,14 @@
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr 10fr;
 }
 
 .sidebar,
 .header,
 .main-content {
-    padding: 30px;
+    padding: 20px;
 }
 
 .sidebar {
@@ -25,6 +25,11 @@
     gap: 50px;
     color: #FFFFFF;
     grid-template-rows: 60px 300px 150px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .sidebar img {
@@ -55,6 +60,45 @@
     background-color: #FFFFFF;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content max-content max-content;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    width: 30px;
+}
+
+.profile-picture {
+    background-color: #FACC15;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.profile-name {
+    justify-self: start;
+    font-weight: bold;
+}
+
+button {
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid #1992D4;
+    background-color: #1992D4;
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+input {
+    border-radius: 30px;
+    border: 1px solid #E2E8F0;
+    background-color: #E2E8F0;
+    height: 36px;
+    width: 100%;
 }
 
 .main-content {
